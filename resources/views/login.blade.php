@@ -5,7 +5,7 @@
 
 
 @section('content')
-    <div class="grid md:grid-cols-5 pt-48" style="width:auto; height:500px; ">
+    <div class="grid md:grid-cols-5 pt-48 " style="width:auto; height:500px; ">
         <div class="col-start-3">
             <img src="images/Login ICON_1.png" alt="Noimage" class="w-14 float-left">
             <div class="text-gray-300 text-2xl mt-3 mx-16" style="">Login</div>

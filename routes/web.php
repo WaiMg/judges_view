@@ -56,3 +56,6 @@ Route::get('/theme2_category', function () {
 Route::get('/detail', function () {
     return view('detail');
 });
+Route::get('/evaluation', function () {
+    return view('evaluation');
+});

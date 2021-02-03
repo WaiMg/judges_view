@@ -1,20 +1,26 @@
-
-
 @extends('layouts.app')
 
 
 @section('content')
 
-  <div class="container">
-    <div class="grid grid-cols-10 "  style="padding:10px">
-        <a class="col-md-1 text-center  bg-red-600 hover:bg-red-500"style="border:2px solid white;border-radius:10px;width:100px;height:50px;color:white;padding:10px;" href="category">Back</a>
-        <div class="col-2  text-center "style="border:2px solid white;border-radius:10px;background-color:red;width:300px;height:50px;color:white;padding:10px;">Theme-2 Category</div>
+    <div class="container">
+        <div class="grid grid-cols-10 " style="padding:10px">
+            <a class="col-md-1 text-center  bg-red-600 bg-opacity-60 hover:bg-opacity-50"
+                style="border:2px solid white;border-radius:10px;width:100px;height:50px;color:white;padding:10px; "
+                href="home">
+                <i class="fa fa-step-backward" aria-hidden="true"></i>
+            </a>
+            <div class="col-2  text-center bg-opacity-60 bg-red-600"
+                style="border:2px solid white;border-radius:10px;width:300px;height:50px;color:white;padding:10px;">
+                Theme-2 Category</div>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-2 place-items-center text-white object-center ">
+            <a class="box-border h-42 w-60  border-2 bg-red-600 bg-opacity-60 hover:bg-opacity-50 rounded-lg md:col-start-2 p-8 text-center"
+                style="margin-top:140px" href="student_category">STAGING</a>
+            <a class="box-border h-42 w-60  border-2 bg-blue-900 bg-opacity-60 hover:bg-opacity-50 rounded-lg p-8  text-center"
+                style="margin-top:140px" href="theme1_category">EVALUATION</a>
+        </div>
     </div>
 
-    <div class="grid md:grid-cols-4 gap-2 place-items-center text-white object-center " >
-        <a class="box-border h-42 w-60  border-2 bg-red-600 hover:bg-red-400 rounded-lg md:col-start-2 p-8 text-center"style="margin-top:140px" href="student_category">STAGING</a>
-        <a class="box-border h-42 w-60  border-2 bg-blue-900 hover:bg-blue-500 rounded-lg p-8  text-center"style="margin-top:140px" href="theme1_category">EVALUATION</a>
-      </div>
-  </div>
-  
 @stop
