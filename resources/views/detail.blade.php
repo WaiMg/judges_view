@@ -1,74 +1,60 @@
 
 
 @extends('layouts.app')
+<style>
+    .corret:hover img {
+        filter: brightness(70%);
+    }
 
+</style>
 
 @section('content')
-<div class="container">
- <!-- This example requires Tailwind CSS v2.0+ -->
- <div class="fixed inset-0 overflow-hidden">
-    <div class="absolute inset-0 overflow-hidden">
-      <!--
-        Background overlay, show/hide based on slide-over state.
-  
-        Entering: "ease-in-out duration-500"
-          From: "opacity-0"
-          To: "opacity-100"
-        Leaving: "ease-in-out duration-500"
-          From: "opacity-100"
-          To: "opacity-0"
-      -->
-      <div class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
-      <section class="absolute inset-y-0 right-0 pl-10 max-w-full flex" aria-labelledby="slide-over-heading">
-        <!--
-          Slide-over panel, show/hide based on slide-over state.
-  
-          Entering: "transform transition ease-in-out duration-500 sm:duration-700"
-            From: "translate-x-full"
-            To: "translate-x-0"
-          Leaving: "transform transition ease-in-out duration-500 sm:duration-700"
-            From: "translate-x-0"
-            To: "translate-x-full"
-        -->
-        <div class="relative w-screen max-w-md">
-          <!--
-            Close button, show/hide based on slide-over state.
-  
-            Entering: "ease-in-out duration-500"
-              From: "opacity-0"
-              To: "opacity-100"
-            Leaving: "ease-in-out duration-500"
-              From: "opacity-100"
-              To: "opacity-0"
-          -->
-          <div class="absolute top-0 left-0 -ml-8 pt-4 pr-2 flex sm:-ml-10 sm:pr-4">
-            <button class="rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white">
-              <span class="sr-only">Close panel</span>
-              <!-- Heroicon name: x -->
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
+
+<section class="py-3 overflow-x-hidden">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap lg:flex-nowrap gap-4">
+        <div class="w-full lg:w-2/3" style="width: 100%;height;auto">
+          <div class="grid grid-cols-10 h-8 bg-blue-900 text-white border-2 rounded-lg border-blue-900">
+            <span class="col-span-2 border-2 rounded-lg text-center">EVALUATION</span>
+            
+            <div class="col-start-5 col-span-2 border-2 rounded-lg text-center">ROUND-1</div>
+
+            <div class="col-end-11 col-span-2 border-2 rounded-lg text-center">TOTAL-100</div>
+
           </div>
-          <div class="h-full flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
-            <div class="px-4 sm:px-6">
-              <h2 id="slide-over-heading" class="text-lg font-medium text-gray-900">
-                Panel title
-              </h2>
-            </div>
-            <div class="mt-6 relative flex-1 px-4 sm:px-6">
-              <!-- Replace with your content -->
-              <div class="absolute inset-0 px-4 sm:px-6">
-                <div class="h-full border-2 border-dashed border-gray-200" aria-hidden="true"></div>
+          <img class="mx-auto rounded-xl z-10" src="" style="width:100%;height:auto"  alt="">
+        </div>
+
+        <div class="w-full lg:w-1/3 lg:order-1 border-2 rounded-lg bg-white border-blue-800" style="height: 480px">
+       
+              <h2 class="text-2xl font-bold font-heading text-center bg-blue-900 text-white">FILE INFORMATION</h2>
+        
+          
+            <div class="flex items-start p-4">
+              <div>
+                <h3 class="mb-2 text-xl font-semibold font-heading">Flexible software</h3>
+                <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
               </div>
-              <!-- /End replace -->
             </div>
+            <div class="flex items-start p-4">
+            
+              <div>
+                <h3 class="mb-2 text-xl font-semibold font-heading">Best access for all of the resources</h3>
+                <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-5 gap-4 h-10 p-4">
+                
+               <button class="corret"><img class="col-span-1 " src="/images/Reject.png" alt=""></button> 
+               <button class="corret"><img class="col-span-1 " src="/images/pass.png" alt=""></button> 
+                
+                <button class="col-start-4 col-span-2 border-2 rounded-lg bg-red-600 hover:bg-red-500 text-white">NEXT</button>
+                
+
+            
           </div>
         </div>
-      </section>
+      </div>
     </div>
-  </div>    
-</div>
-
-  
+  </section>
 @stop
