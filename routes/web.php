@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PhotoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,7 @@ Route::namespace('Auth')->group(function () {
     // Route::get('/register','LoginController@show_signup_form')->name('register');
     // Route::post('/register','LoginController@process_signup');
     // Route::post('/logout','LoginController@logout')->name('logout');
+    Route::get('viewPhoto',[PhotoController::class,'index'])->name('viewPhoto');
   
 
 
