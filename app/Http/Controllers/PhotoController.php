@@ -15,8 +15,9 @@ class PhotoController extends Controller
     public function index()
     {
         $images = \File::allFiles(public_path('testing'));
-
+        
         return View('all_view')->with(array('images'=>$images));
+        // print_r($images);
     }
 
     /**
@@ -26,9 +27,40 @@ class PhotoController extends Controller
      */
     public function create()
     {
-        //
-    }
+        $images = \File::allFiles(public_path('testing'));
+        for($i=0;$i<count($images);$i++){
 
+            $exif = exif_read_data($images[$i], 'IFD0',true);
+            echo $exif===false ? "No header data found.<br />\n" : "Image contains headers<br />\n";
+            
+            $exit = exif_read_data($images[$i], 0, true);
+            echo $images[$i]->getFilename();
+            foreach ($exif as $key => $section) {
+                foreach ($section as $name => $val) {
+                    echo "$name: ";
+                    
+                    // echo "<pre>";
+                    // print_r($name);
+
+                    print_r($val);
+                    echo "<br />";
+
+                    // echo"</pre>";
+                }
+            }
+
+//             echo "<pre>";
+//         print_r(getimagesize($images[$i]));
+// echo "</pre>";
+            // Photo::create([
+            //     'file_name'=>$images[$i]->getFileName(),
+            //     'cpm_id'=>'CPM2001',
+            // 'theme'=>'THeme1',
+            // 'camera'=>'Canon'
+            // ]);           
+        }
+    }
+   
     /**
      * Store a newly created resource in storage.
      *

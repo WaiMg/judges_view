@@ -25,9 +25,8 @@
 
 @section('content')
 
-    <br><br><br>
 
-    <div class="container" style="">
+    <div class="" style="">
 
         <div class="grid md:grid-cols-5 gap-3 place-items-center text-white object-center ">
             <a class="box-border h-42 w-60  border-2 bg-red-600 hover:bg-red-400 rounded-lg md:col-start-2 p-8 text-center bg-opacity-60 hover:bg-opacity-50"

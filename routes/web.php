@@ -39,6 +39,8 @@ Route::namespace('Auth')->group(function () {
     // Route::post('/register','LoginController@process_signup');
     // Route::post('/logout','LoginController@logout')->name('logout');
     Route::get('viewPhoto',[PhotoController::class,'index'])->name('viewPhoto');
+    Route::get('store',[PhotoController::class,'create'])->name('store');
+
   
 
 
