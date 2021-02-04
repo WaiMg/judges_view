@@ -30,34 +30,34 @@
     <div class="container" style="">
 
 
-        <div class="grid md:grid-cols-6 gap-3 place-items-center text-white object-center ">
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg md:col-start-2 p-10 text-center bg-opacity-60 hover:bg-opacity-50"
+        <div class="grid grid-cols-4 place-items-center text-white object-center ">
+            <a class="cols-span-1 box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg md:col-start-1 p-8 text-center bg-opacity-60 hover:bg-opacity-50"
+                href="detail">ROUND-1</a>
+            <a class="cols-span-1 box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-8 text-center bg-opacity-60 hover:bg-opacity-50"
                 href="student_category">ROUND-1</a>
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-10 text-center bg-opacity-60 hover:bg-opacity-50"
+            <a class="cols-span-1 box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-8 text-center bg-opacity-60 hover:bg-opacity-50"
                 href="student_category">ROUND-1</a>
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-10 text-center bg-opacity-60 hover:bg-opacity-50"
-                href="student_category">ROUND-1</a>
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-10 text-center bg-opacity-60 hover:bg-opacity-50"
-                href="student_category">ROUND-1</a>
-        </div>
-        <div class="grid md:grid-cols-6 gap-3 place-items-center text-white mt-10">
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg md:col-start-2 p-10 text-center bg-opacity-60 hover:bg-opacity-50"
-                href="student_category">ROUND-1</a>
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-10 text-center bg-opacity-60 hover:bg-opacity-50"
-                href="student_category">ROUND-1</a>
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-10 text-center bg-opacity-60 hover:bg-opacity-50"
-                href="student_category">ROUND-1</a>
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-10 text-center bg-opacity-60 hover:bg-opacity-50"
+            <a class="cols-span-1 box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-8 text-center bg-opacity-60 hover:bg-opacity-50"
                 href="student_category">ROUND-1</a>
         </div>
-        <div class="grid md:grid-cols-6 gap-3 place-items-center text-white mt-10 ">
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg md:col-start-2 p-10 text-center bg-opacity-60 hover:bg-opacity-50"
+        <div class="grid md:grid-cols-4 gap-3 place-items-center text-white mt-14">
+            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg md:col-start-1 p-8 text-center bg-opacity-60 hover:bg-opacity-50"
                 href="student_category">ROUND-1</a>
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-10 text-center bg-opacity-60 hover:bg-opacity-50"
+            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-8 text-center bg-opacity-60 hover:bg-opacity-50"
                 href="student_category">ROUND-1</a>
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-10 text-center bg-opacity-60 hover:bg-opacity-50"
+            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-8 text-center bg-opacity-60 hover:bg-opacity-50"
                 href="student_category">ROUND-1</a>
-            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-10 text-center bg-opacity-60 hover:bg-opacity-50"
+            <a class="box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-8 text-center bg-opacity-60 hover:bg-opacity-50"
+                href="student_category">ROUND-1</a>
+        </div>
+        <div class="grid grid-cols-4 place-items-center text-white object-center mt-14">
+            <a class="cols-span-1 box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg md:col-start-1 p-8 text-center bg-opacity-60 hover:bg-opacity-50"
+                href="student_category">ROUND-1</a>
+            <a class="cols-span-1 box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-8 text-center bg-opacity-60 hover:bg-opacity-50"
+                href="student_category">ROUND-1</a>
+            <a class="cols-span-1 box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-8 text-center bg-opacity-60 hover:bg-opacity-50"
+                href="student_category">ROUND-1</a>
+            <a class="cols-span-1 box-border h-42 w-60  border-2 bg-blue-600 hover:bg-blue-400 rounded-lg p-8 text-center bg-opacity-60 hover:bg-opacity-50"
                 href="student_category">ROUND-1</a>
         </div>
     </div>
