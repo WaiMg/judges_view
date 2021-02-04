@@ -3,27 +3,20 @@
 @section('content')
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
+        <div class="">
+            <div class="grid grid-cols-4">
                 <form action="">
-                    <h2>Show All Image from public folder using Laravel</h2>
+
 
                     <span class="text-white">{{ count($images) }}</span>
 
-                    @for ($i = 0; $i < count($images); $i++){
-                        <span class="text-white">{{ $images[$i] }}</span>
-                        }
-                    @endfor
-                    {{-- <ul>
-                        @foreach ($images as $image)
-                            <span class="text-white">{{ $image->getFilename() }}</span>
+                    @for ($i = 0; $i < count($images); $i++)
 
-                            <li style="width:80px;display:inline-block;margin:5px 0px">
-                                <input type="checkbox" name="images[]" value="{{ $image->getFilename() }}" />
-                                <img src="{{ asset('images/' . $image->getFilename()) }}" width="50" height="50">
-                            </li>
-                        @endforeach
-                    </ul> --}}
+                        <span class="text-white">{{ $images[$i]->getFilename() }}</span>
+                        <img src="{{ asset('testing/' . $images[$i]->getFilename()) }}" width="250" height="250">
+                        <a class="text-white bg-red-200" href="detail?name={{ $images[$i]->getFilename() }}">View</a>
+
+                    @endfor
 
                 </form>
             </div>

@@ -14,7 +14,7 @@ class PhotoController extends Controller
      */
     public function index()
     {
-        $images = \File::allFiles(public_path('images'));
+        $images = \File::allFiles(public_path('testing'));
 
         return View('all_view')->with(array('images'=>$images));
     }
