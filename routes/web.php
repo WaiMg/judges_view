@@ -39,7 +39,9 @@ Route::namespace('Auth')->group(function () {
     // Route::post('/register','LoginController@process_signup');
     // Route::post('/logout','LoginController@logout')->name('logout');
     Route::get('viewPhoto',[PhotoController::class,'index'])->name('viewPhoto');
-    Route::get('store',[PhotoController::class,'create'])->name('store');
+    Route::post('store',[PhotoController::class,'create']);
+    Route::get('detail/{id}',[PhotoController::class,'show_detail'])->name('detail');
+
 
   
 
@@ -57,9 +59,7 @@ Route::get('/theme1_category', function () {
 Route::get('/theme2_category', function () {
     return view('theme2_category');
 });
-Route::get('/detail', function () {
-    return view('detail');
-});
+
 Route::get('/evaluation', function () {
     return view('evaluation');
 });
