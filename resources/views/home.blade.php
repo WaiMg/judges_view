@@ -25,8 +25,8 @@
 
 @section('content')
 
-<br><br><br>
-    <div class="container" style="">
+
+    <div class="" style="">
 
       
     </div>

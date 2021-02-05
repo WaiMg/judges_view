@@ -1,26 +1,31 @@
 @extends('layouts.app')
 
+@section('profile')
+@endsection
 @section('content')
 
-    <div class="container">
-        <div class="">
-            <div class="grid grid-cols-4">
-                <form action="">
+    <div class="bg-purple-100 bg-opacity-60 m-4 p-3 shadow-inner rounded-md">
+        <span>Total Photos::{{count($images)}}</span>
+
+        <div class="grid grid-cols-4 gap-1">
+            @for ($i = 0; $i < count($images); $i++)
+                <div class=" p-1 ">
+                    <br>
+                    <a class=" rounded-xl ml-20" href="detail?name={{ $images[$i]->getFilename() }}">
+                        <img class="shadow-2xl" src="{{ asset('testing/' . $images[$i]->getFilename()) }}">
 
 
-                    <span class="text-white">{{ count($images) }}</span>
+                    </a>
+                </div>
+            @endfor
+            
 
-                    @for ($i = 0; $i < count($images); $i++)
-
-                        <span class="text-white">{{ $images[$i]->getFilename() }}</span>
-                        <img src="{{ asset('testing/' . $images[$i]->getFilename()) }}" width="250" height="250">
-                        <a class="text-white bg-red-200" href="detail?name={{ $images[$i]->getFilename() }}">View</a>
-
-                    @endfor
-
-                </form>
-            </div>
         </div>
+        <form action="{{url('store')}}" method="post" class="mt-12">
+            @csrf
+            <button type="submit" class="bg-blue-200 px-6 m-5 py-4 rounded-md float-right shadow-lg">Push</button>
+        </form>
+        
     </div>
 
 

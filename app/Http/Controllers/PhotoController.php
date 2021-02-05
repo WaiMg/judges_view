@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Photo;
 use Illuminate\Http\Request;
+use File;
+use Illuminate\Support\Facades\Storage;
 
+use App\Http\Helper;
 class PhotoController extends Controller
 {
     /**
@@ -15,8 +18,9 @@ class PhotoController extends Controller
     public function index()
     {
         $images = \File::allFiles(public_path('testing'));
-
+        
         return View('all_view')->with(array('images'=>$images));
+        // print_r($images);
     }
 
     /**
@@ -26,9 +30,30 @@ class PhotoController extends Controller
      */
     public function create()
     {
-        //
-    }
+        $images = \File::allFiles(public_path('testing'));
 
+        for($i=0;$i<count($images);$i++){
+
+            $exif = exif_read_data($images[$i], 'IFD0',true);
+            echo $exif===false ? "No header data found.<br />\n" : "Image contains headers<br />\n";
+            
+            $exit = exif_read_data($images[$i], 0, true);
+            // echo $images[$i]->getFilename();
+            Photo::create([
+                'file_name'=>$images[$i]->getFileName(),
+                'cpm_id'=>'CPM2001',
+                'theme'=>'THeme1',
+                'camera'=>'Canon'
+            ]);
+        File::move(public_path('testing/'.$images[$i]->getFileName()), public_path('DB/'.$images[$i]->getFileName()));          
+
+        }
+        // Storage::move($images[$i], 'DB/'.$images[$i]->getFileName()); 
+        return redirect()->back();
+        
+       
+    }
+   
     /**
      * Store a newly created resource in storage.
      *
@@ -46,9 +71,20 @@ class PhotoController extends Controller
      * @param  \App\Models\Photo  $photo
      * @return \Illuminate\Http\Response
      */
-    public function show(Photo $photo)
+    public function show_detail(string $id){
+        
+        $photo=Photo::findOrfail($id);
+        
+        $camera = Helper::cameraUsed("DB/".$photo->file_name);
+        
+        return view('detail', ['camera' => $camera,'name'=>$photo->file_name]);
+
+        
+    }
+    public function showByRound(string $round)
     {
-        //
+        $all=Photo::where('round',$round);
+        
     }
 
     /**
