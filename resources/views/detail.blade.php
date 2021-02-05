@@ -34,42 +34,11 @@
                     <h2 class="text-2xl font-bold font-heading text-center bg-blue-900 text-white">FILE INFORMATION</h2>
 
 
-                    <div class="flex items-start p-4">
-                        <div>
-                            <h3 class="mb-2 text-xl font-semibold font-heading">Flexible software</h3>
-                            <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                elit. Veritatis expedita animi.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start p-4">
-                        <div>
-                            <h3 class="mb-2 text-xl font-semibold font-heading">Flexible software</h3>
-                            <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                elit. Veritatis expedita animi.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start p-4">
-                        <div>
-                            <h3 class="mb-2 text-xl font-semibold font-heading">Flexible software</h3>
-                            <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                elit. Veritatis expedita animi.</p>
-                        </div>
-                    </div>
+                    
                     <div class="flex items-start p-4">
 
                         <div>
-                            <h3 class="mb-2 text-xl font-semibold font-heading">Best access for all of the resources</h3>
-
-                            <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                elit. Veritatis expedita animi.</p>
-                                <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                    elit. Veritatis expedita animi.</p>
-                            <ul>
-                                <li>{{ $_GET['name'] }}</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                            
                    
                             {{$name}}
                             <br>
@@ -92,10 +61,6 @@
 
                         <button class="corret"><img class="col-span-1 " src="/images/Reject.png" alt=""></button>
                         <button class="corret"><img class="col-span-1 " src="/images/pass.png" alt=""></button>
-<<<<<<< HEAD
-    
-=======
->>>>>>> bd19710f946497d30fc4dce912d1c50aa07d7b16
                         <button
                             class="col-start-4 col-span-2 border-2 rounded-lg bg-red-600 hover:bg-red-500 text-white">NEXT</button>
     
