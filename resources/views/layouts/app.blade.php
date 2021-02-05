@@ -27,20 +27,20 @@
     @show
 
     @section('profile')
-        <div class=" h-screen" id="contents"
-            style='background-image: url(" images/For JUDGE App_1.jpg");background-size: 100% 100%;background-repeat: repeat-y;'>
+        <div class=" h-screen bg-repeat" id="contents"
+            style='background-image: url(" images/For JUDGE App_1.jpg");background-repeat: repeat-x'>
             @if (Auth::user() != null)
 
 
                 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
                 <div class="flex float-right ">
 
-                    <div x-data="{ dropdownOpen: false }" class="relative">
+                    <div x-data="{ dropdownOpen: false }" >
 
                         <button @click="dropdownOpen = !dropdownOpen"
-                            class="relative z-10 block rounded-md p-2 focus:outline-none">
+                            class="z-10 block rounded-md mt-5 mr-20 focus:outline-none">
                             <span
-                                class="transition duration-300 ease-in-out mr-5 h-10 border-2 border-white text-white p-2 px-5 rounded-md hover:bg-red-600 hover:bg-opacity-40"><i
+                                class="transition duration-300 ease-in-out m-8 h-10 border-2 border-white text-white p-2 px-5 rounded-md hover:bg-red-600 hover:bg-opacity-40"><i
                                     class="fas fa-user-alt"></i>
                                 {{ Auth::user()->name }}</span>
                         </button>
